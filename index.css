@@ -8,6 +8,8 @@ body{
    
 }
 .container{
+    border:2px solid black;
+    border-radius: 14px;
     width:25%;
     /* height:80vh ; */
     margin: auto;
@@ -64,7 +66,7 @@ display: flex;
 #min-height{
     height:69px;
 }
-.container .row button .color{
+.container .row .color{
 background-color:rgb(165, 165, 165);
 }
 #grey{
@@ -75,4 +77,55 @@ background-color: rgb(165, 165, 165);
     width:65px;
     margin:0px 2px;
 
+}
+
+
+
+
+
+
+@media only screen and (max-width:500px){
+ .container{
+    width:100%;
+    height:100vh;
+ }
+ .container input{
+    height:180px;
+ }
+ .container .row{
+
+ }
+ .container .row button{
+    width:80px;
+    height:90px;
+ }
+
+ #min-width{
+margin-top: 22px;
+ }
+ .double-width{
+    padding: 0px 80px;
+}
+.double-length{
+    padding:91px 39px;
+    margin-right: 0;
+}
+}
+@media only screen and (max-width:390px){
+    .double-width{
+        padding: 0px 76px;
+    }
+    .double-length{
+        padding:91px 35px;
+        /* margin-right: 0; */
+    }
+}
+@media only screen and (max-width:360px){
+    .double-width{
+        padding: 0px 73px;
+    }
+    .double-length{
+        padding:91px 34px;
+        margin-right: 0;
+    }
 }
